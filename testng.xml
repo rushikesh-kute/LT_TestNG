@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LT_TestNG" parallel="tests" configfailurepolicy="continue">
+	
+    <test thread-count="3" name="Chrome on Windows 10">
+        <parameter name="browserVersion" value="128.0" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="username" value="rushikute955" />
+        <parameter name="access_key" value="LT_O2OjcCAXtn89PMHftECoQ0iQhG8Fd5Xaf5ZsZ0rVywVChTk" />
+        <classes>
+            <class name="LambdaTest.LT_TestNG.window_10_Chrome_TNg" />
+        </classes>
+    </test> 
+
+    <test thread-count="3" name="Edge on macOS Ventura">
+        <parameter name="browserVersion" value="127.0" />
+        <parameter name="platform" value="macOS Ventura" />
+        <parameter name="username" value="rushikute955" />
+        <parameter name="access_key" value="LT_O2OjcCAXtn89PMHftECoQ0iQhG8Fd5Xaf5ZsZ0rVywVChTk" />
+        <classes>
+            <class name="LambdaTest.LT_TestNG.mac_Edge_TNg" />
+        </classes>
+      </test>
+      
+   <test thread-count="3" name="Internet Explorer on Windows 10">
+        <parameter name="browserVersion" value="11" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="username" value="rushikute955" />
+        <parameter name="access_key" value="LT_O2OjcCAXtn89PMHftECoQ0iQhG8Fd5Xaf5ZsZ0rVywVChTk" />
+        <classes>
+            <class name="LambdaTest.LT_TestNG.windows_10_IE_TNg" />
+        </classes>
+   
+    </test> 
+
+    <test thread-count="3" name="Firefox on Windows 11">
+        <parameter name="browserVersion" value="130" />
+        <parameter name="platform" value="Windows 11" />
+        <parameter name="username" value="rushikute955" />
+        <parameter name="access_key" value="LT_O2OjcCAXtn89PMHftECoQ0iQhG8Fd5Xaf5ZsZ0rVywVChTk" />
+        <classes>
+            <class name="LambdaTest.LT_TestNG.window_10_FFox_TNg" />
+        </classes>
+    </test>
+    
+</suite>
